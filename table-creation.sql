@@ -128,7 +128,7 @@ CREATE TABLE CardDonation (
 /* Relationships between Strong Sets */
 
 CREATE TABLE Insures(
-    ClientSSN INT NOT NULL,
+    ClientSSN INT, -- NOT NULL, The Relationship is many to many.
     PolicyID INT,
     PRIMARY KEY (ClientSSN, PolicyID),
     FOREIGN KEY (ClientSSN) REFERENCES Client(SSN),
