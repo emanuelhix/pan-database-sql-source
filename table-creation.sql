@@ -112,7 +112,7 @@ CREATE TABLE CheckDonation (
     DonorSSN INT,        
     DonoDate DATE,   
     PRIMARY KEY (DonorSSN, DonoDate, CheckNumber),
-    CONSTRAINT fk_donation FOREIGN KEY (DonorSSN, DonoDate)  
+    CONSTRAINT fk_donation_check FOREIGN KEY (DonorSSN, DonoDate)  
         REFERENCES Donation (DonorSSN, DonoDate)
 );
 
@@ -121,7 +121,7 @@ CREATE TABLE CardDonation (
     DonorSSN INT,       
     DonoDate DATE,     
     PRIMARY KEY (DonorSSN, DonoDate, CardNumber),  
-    CONSTRAINT fk_donation FOREIGN KEY (DonorSSN, DonoDate)  
+    CONSTRAINT fk_donation_card FOREIGN KEY (DonorSSN, DonoDate)  
         REFERENCES Donation (DonorSSN, DonoDate)
 );
 
