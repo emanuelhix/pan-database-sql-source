@@ -1,3 +1,9 @@
+-- Display all data from Serves
+SELECT * FROM Serves;
+
+-- Display all data from Cares
+SELECT * FROM Cares;
+
 -- Display all data from ClientNeeds
 SELECT * FROM ClientNeeds;
 
